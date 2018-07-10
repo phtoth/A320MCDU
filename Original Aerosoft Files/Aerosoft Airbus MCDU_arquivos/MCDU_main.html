@@ -1,0 +1,117 @@
+<html><head>
+  <title>Aerosoft Airbus MCDU</title>
+  <meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+  <script type="text/javascript">
+  var i=new Image();
+  setInterval(updateDisplay, 1000);
+  function updateDisplay() {
+    i.onerror=function() { setTimeout(updateDisplay,050); };
+    i.onload=function() { paintDisplay(i); };
+    i.src="MCDU_Dspl.png?"+(new Date()).getTime();
+  }
+  function paintDisplay(imgObj) {
+    var canvasObj = document.getElementById('mcducanvas').getContext('2d');
+    canvasObj.drawImage(imgObj,19,16,273,250,0,0,370,364);
+    var imd = canvasObj.getImageData(0, 0, 370,364);
+    var numPixels = 370 * 364 * 4;
+    for (var k = 0; k < numPixels; k += 4) if (imd.data[k]==0 && imd.data[k+1]==0 && imd.data[k+2] == 0) imd.data[k+3] = 0;
+    canvasObj.putImageData(imd, 0, 0);
+  }
+  updateDisplay();
+  </script>
+  <style type="text/css">
+    body { background-color:black; margin:0px; }
+    #parent { position: relative; width:576px; margin-left:auto; margin-right:auto; }
+    #mcdu_background { position:absolute; }
+    #mcdu_display { position:absolute; left:103px; top: 72px; width: 370px; height: 364px; }
+  </style>
+</head>
+<body onload="updateDisplay()">
+  <div id="parent">
+    <div id="mcdu_background">
+      <img src="MCDU_main_data/mcdu_bg.jpg" usemap="#kb_map">
+      <map name="kb_map">
+        <area shape="rect" coords="22,124,62,152" onclick="parent.btn('/MCDU_KB_00')"> <!-- LSK 1-->
+        <area shape="rect" coords="22,174,62,202" onclick="parent.btn('/MCDU_KB_01')"> <!-- LSK 2-->
+        <area shape="rect" coords="22,223,62,251" onclick="parent.btn('/MCDU_KB_02')"> <!-- LSK 3-->
+        <area shape="rect" coords="22,273,62,301" onclick="parent.btn('/MCDU_KB_03')"> <!-- LSK 4-->
+        <area shape="rect" coords="22,322,62,350" onclick="parent.btn('/MCDU_KB_04')"> <!-- LSK 5-->
+        <area shape="rect" coords="22,372,62,400" onclick="parent.btn('/MCDU_KB_05')"> <!-- LSK 6-->
+        <area shape="rect" coords="515,124,555,152" onclick="parent.btn('/MCDU_KB_06')"> <!-- RSK 1-->
+        <area shape="rect" coords="515,174,555,202" onclick="parent.btn('/MCDU_KB_07')"> <!-- RSK 2-->
+        <area shape="rect" coords="515,223,555,251" onclick="parent.btn('/MCDU_KB_08')"> <!-- RSK 3-->
+        <area shape="rect" coords="515,273,555,301" onclick="parent.btn('/MCDU_KB_09')"> <!-- RSK 4-->
+        <area shape="rect" coords="515,322,555,350" onclick="parent.btn('/MCDU_KB_10')"> <!-- RSK 5-->
+        <area shape="rect" coords="515,372,555,400" onclick="parent.btn('/MCDU_KB_11')"> <!-- RSK 6-->
+        <area shape="rect" coords="79,470,132,506" onclick="parent.btn('/MCDU_KB_12')"> <!-- FN DIR-->
+        <area shape="rect" coords="144,470,197,506" onclick="parent.btn('/MCDU_KB_13')"> <!-- FN PRG-->
+        <area shape="rect" coords="208,470,261,506" onclick="parent.btn('/MCDU_KB_20')"> <!-- FN PRF-->
+        <area shape="rect" coords="273,470,326,506" onclick="parent.btn('/MCDU_KB_21')"> <!-- FN INI-->
+        <area shape="rect" coords="337,470,390,506" onclick="parent.btn('/MCDU_KB_22')"> <!-- FN DAT-->
+        <area shape="rect" coords="79,517,132,553" onclick="parent.btn('/MCDU_KB_14')"> <!-- FN FPLN-->
+        <area shape="rect" coords="144,517,197,553" onclick="parent.btn('/MCDU_KB_15')"> <!-- FN RADN-->
+        <area shape="rect" coords="208,517,261,553" onclick="parent.btn('/MCDU_KB_23')"> <!-- FN FUEL-->
+        <area shape="rect" coords="273,517,326,553" onclick="parent.btn('/MCDU_KB_24')"> <!-- FN SECF-->
+        <area shape="rect" coords="402,517,455,553" onclick="parent.btn('/MCDU_KB_26')"> <!-- FN MENU-->
+        <area shape="rect" coords="79,565,132,601" onclick="parent.btn('/MCDU_KB_16')"> <!-- FN ARPT-->
+        <area shape="rect" coords="79,612,132,648" onclick="parent.btn('/MCDU_KB_25')"> <!-- AR L-->
+        <area shape="rect" coords="144,612,197,648" onclick="parent.btn('/MCDU_KB_17')"> <!-- AR U-->
+        <area shape="rect" coords="79,659,132,695" onclick="parent.btn('/MCDU_KB_18')"> <!-- AR R-->
+        <area shape="rect" coords="144,659,197,695" onclick="parent.btn('/MCDU_KB_19')"> <!-- AR D-->
+        <area shape="rect" coords="75,720,114,759" onclick="parent.btn('/MCDU_KB_28')"> <!-- AL 1-->
+        <area shape="rect" coords="127,720,166,759" onclick="parent.btn('/MCDU_KB_29')"> <!-- AL 2-->
+        <area shape="rect" coords="179,720,218,759" onclick="parent.btn('/MCDU_KB_30')"> <!-- AL 3-->
+        <area shape="rect" coords="75,768,114,807" onclick="parent.btn('/MCDU_KB_31')"> <!-- AL 4-->
+        <area shape="rect" coords="127,768,166,807" onclick="parent.btn('/MCDU_KB_32')"> <!-- AL 5-->
+        <area shape="rect" coords="179,768,218,807" onclick="parent.btn('/MCDU_KB_33')"> <!-- AL 6-->
+        <area shape="rect" coords="75,815,114,854" onclick="parent.btn('/MCDU_KB_34')"> <!-- AL 7-->
+        <area shape="rect" coords="127,815,166,854" onclick="parent.btn('/MCDU_KB_35')"> <!-- AL 8-->
+        <area shape="rect" coords="179,815,218,854" onclick="parent.btn('/MCDU_KB_36')"> <!-- AL 9-->
+        <area shape="rect" coords="75,863,114,902" onclick="parent.btn('/MCDU_KB_37')"> <!-- AL .-->
+        <area shape="rect" coords="127,863,166,902" onclick="parent.btn('/MCDU_KB_27')"> <!-- AL 0-->
+        <area shape="rect" coords="179,863,218,902" onclick="parent.btn('/MCDU_KB_65')"> <!-- AL +-->
+        <area shape="rect" coords="235,584,275,624" onclick="parent.btn('/MCDU_KB_39')"> <!-- AL A-->
+        <area shape="rect" coords="291,584,331,624" onclick="parent.btn('/MCDU_KB_40')"> <!-- AL B-->
+        <area shape="rect" coords="348,584,388,624" onclick="parent.btn('/MCDU_KB_41')"> <!-- AL C-->
+        <area shape="rect" coords="404,584,444,624" onclick="parent.btn('/MCDU_KB_42')"> <!-- AL D-->
+        <area shape="rect" coords="460,584,500,624" onclick="parent.btn('/MCDU_KB_43')"> <!-- AL E-->
+        <area shape="rect" coords="235,639,275,679" onclick="parent.btn('/MCDU_KB_44')"> <!-- AL F-->
+        <area shape="rect" coords="291,639,331,679" onclick="parent.btn('/MCDU_KB_45')"> <!-- AL G-->
+        <area shape="rect" coords="348,639,388,679" onclick="parent.btn('/MCDU_KB_46')"> <!-- AL H-->
+        <area shape="rect" coords="404,639,444,679" onclick="parent.btn('/MCDU_KB_47')"> <!-- AL I-->
+        <area shape="rect" coords="460,639,500,679" onclick="parent.btn('/MCDU_KB_48')"> <!-- AL J-->
+        <area shape="rect" coords="235,695,275,735" onclick="parent.btn('/MCDU_KB_49')"> <!-- AL K-->
+        <area shape="rect" coords="291,695,331,735" onclick="parent.btn('/MCDU_KB_50')"> <!-- AL L-->
+        <area shape="rect" coords="348,695,388,735" onclick="parent.btn('/MCDU_KB_51')"> <!-- AL M-->
+        <area shape="rect" coords="404,695,444,735" onclick="parent.btn('/MCDU_KB_52')"> <!-- AL N-->
+        <area shape="rect" coords="460,695,500,735" onclick="parent.btn('/MCDU_KB_53')"> <!-- AL O-->
+        <area shape="rect" coords="235,750,275,790" onclick="parent.btn('/MCDU_KB_54')"> <!-- AL P-->
+        <area shape="rect" coords="291,750,331,790" onclick="parent.btn('/MCDU_KB_55')"> <!-- AL Q-->
+        <area shape="rect" coords="348,750,388,790" onclick="parent.btn('/MCDU_KB_56')"> <!-- AL R-->
+        <area shape="rect" coords="404,750,444,790" onclick="parent.btn('/MCDU_KB_57')"> <!-- AL S-->
+        <area shape="rect" coords="460,750,500,790" onclick="parent.btn('/MCDU_KB_58')"> <!-- AL T-->
+        <area shape="rect" coords="235,806,275,846" onclick="parent.btn('/MCDU_KB_59')"> <!-- AL U-->
+        <area shape="rect" coords="291,806,331,846" onclick="parent.btn('/MCDU_KB_60')"> <!-- AL V-->
+        <area shape="rect" coords="348,806,388,846" onclick="parent.btn('/MCDU_KB_61')"> <!-- AL W-->
+        <area shape="rect" coords="404,806,444,846" onclick="parent.btn('/MCDU_KB_62')"> <!-- AL X-->
+        <area shape="rect" coords="460,806,500,846" onclick="parent.btn('/MCDU_KB_63')"> <!-- AL Y-->
+        <area shape="rect" coords="235,861,275,901" onclick="parent.btn('/MCDU_KB_64')"> <!-- AL Z-->
+        <area shape="rect" coords="291,861,331,901" onclick="parent.btn('/MCDU_KB_38')"> <!-- AL /-->
+        <area shape="rect" coords="348,861,388,901" onclick="parent.btn('/MCDU_KB_66')"> <!-- AL SP-->
+        <area shape="rect" coords="404,861,444,901" onclick="parent.btn('/MCDU_KB_67')"> <!-- AL OVFY-->
+        <area shape="rect" coords="460,861,500,901" onclick="parent.btn('/MCDU_KB_68')"> <!-- AL CLR-->
+      </map>
+    </div>
+    <div id="mcdu_display">
+      <canvas id="mcducanvas" width="370" height="364">
+    </canvas></div>
+  </div>
+
+<script type="text/javascript">
+  var v,c;
+  var l=document.getElementById('parent');
+  l.addEventListener('touchstart',function(e){v=e.touches.length!=1?false:true;c=document.elementFromPoint(e.touches[0].pageX,e.touches[0].pageY);});
+  l.addEventListener('touchend',function(e){e.preventDefault();if(v){c.click();v=false;}});
+</script>
+
+</body></html>
