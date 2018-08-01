@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.5.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>Arduino Clone pinheaders
+By cl@xganon.com
+http://www.xganon.com</description>
+<packages>
+<package name="12PINOS">
+<description>Arduino Pro Mini Clone</description>
+<pad name="TX0" x="-6.35" y="26.67" drill="0.8" shape="long"/>
+<pad name="RX1" x="-6.35" y="24.13" drill="0.8" shape="long"/>
+<pad name="RST1" x="-6.35" y="21.59" drill="0.8" shape="long"/>
+<pad name="GND1" x="-6.35" y="19.05" drill="0.8" shape="long"/>
+<pad name="D2" x="-6.35" y="16.51" drill="0.8" shape="long"/>
+<pad name="D3" x="-6.35" y="13.97" drill="0.8" shape="long"/>
+<pad name="D4" x="-6.35" y="11.43" drill="0.8" shape="long"/>
+<pad name="D5" x="-6.35" y="8.89" drill="0.8" shape="long"/>
+<pad name="D6" x="-6.35" y="6.35" drill="0.8" shape="long"/>
+<pad name="D7" x="-6.35" y="3.81" drill="0.8" shape="long"/>
+<pad name="D8" x="-6.35" y="1.27" drill="0.8" shape="long"/>
+<pad name="D9" x="-6.35" y="-1.27" drill="0.8" shape="long"/>
+</package>
+<package name="07PINOS">
+<description>Arduino Pro Mini Clone</description>
+<pad name="PIN01" x="-6.35" y="26.67" drill="0.8" shape="long"/>
+<pad name="PIN02" x="-6.35" y="24.13" drill="0.8" shape="long"/>
+<pad name="PIN03" x="-6.35" y="21.59" drill="0.8" shape="long"/>
+<pad name="PIN04" x="-6.35" y="19.05" drill="0.8" shape="long"/>
+<pad name="PIN05" x="-6.35" y="16.51" drill="0.8" shape="long"/>
+<pad name="PIN06" x="-6.35" y="13.97" drill="0.8" shape="long"/>
+<pad name="PIN07" x="-6.35" y="11.43" drill="0.8" shape="long"/>
+</package>
+<package name="06PINOS">
+<description>Arduino Pro Mini Clone</description>
+<pad name="PIN01" x="-6.35" y="26.67" drill="0.8" shape="long"/>
+<pad name="PIN02" x="-6.35" y="24.13" drill="0.8" shape="long"/>
+<pad name="PIN03" x="-6.35" y="21.59" drill="0.8" shape="long"/>
+<pad name="PIN04" x="-6.35" y="19.05" drill="0.8" shape="long"/>
+<pad name="PIN05" x="-6.35" y="16.51" drill="0.8" shape="long"/>
+<pad name="PIN06" x="-6.35" y="13.97" drill="0.8" shape="long"/>
+</package>
+<package name="11PINOS">
+<description>Arduino Pro Mini Clone</description>
+<pad name="PIN01" x="-6.35" y="26.67" drill="0.8" shape="long"/>
+<pad name="PIN02" x="-6.35" y="24.13" drill="0.8" shape="long"/>
+<pad name="PIN03" x="-6.35" y="21.59" drill="0.8" shape="long"/>
+<pad name="PIN04" x="-6.35" y="19.05" drill="0.8" shape="long"/>
+<pad name="PIN05" x="-6.35" y="16.51" drill="0.8" shape="long"/>
+<pad name="PIN06" x="-6.35" y="13.97" drill="0.8" shape="long"/>
+<pad name="PIN07" x="-6.35" y="11.43" drill="0.8" shape="long"/>
+<pad name="PIN08" x="-6.35" y="8.89" drill="0.8" shape="long"/>
+<pad name="PIN09" x="-6.35" y="6.35" drill="0.8" shape="long"/>
+<pad name="PIN10" x="-6.35" y="3.81" drill="0.8" shape="long"/>
+<pad name="PIN11" x="-6.35" y="1.27" drill="0.8" shape="long"/>
+</package>
+<package name="09PINOS">
+<description>Arduino Pro Mini Clone</description>
+<pad name="PIN01" x="-6.35" y="26.67" drill="0.8" shape="long"/>
+<pad name="PIN02" x="-6.35" y="24.13" drill="0.8" shape="long"/>
+<pad name="PIN03" x="-6.35" y="21.59" drill="0.8" shape="long"/>
+<pad name="PIN04" x="-6.35" y="19.05" drill="0.8" shape="long"/>
+<pad name="PIN05" x="-6.35" y="16.51" drill="0.8" shape="long"/>
+<pad name="PIN06" x="-6.35" y="13.97" drill="0.8" shape="long"/>
+<pad name="PIN07" x="-6.35" y="11.43" drill="0.8" shape="long"/>
+<pad name="PIN08" x="-6.35" y="8.89" drill="0.8" shape="long"/>
+<pad name="PIN09" x="-6.35" y="6.35" drill="0.8" shape="long"/>
+</package>
+</packages>
+<symbols>
+<symbol name="12PINOS">
+<pin name="PIN01" x="-22.86" y="20.32" visible="pin" length="middle"/>
+<pin name="PIN02" x="-22.86" y="17.78" visible="pin" length="middle"/>
+<pin name="PIN03" x="-22.86" y="15.24" visible="pin" length="middle"/>
+<pin name="PIN04" x="-22.86" y="12.7" visible="pin" length="middle"/>
+<pin name="PIN05" x="-22.86" y="10.16" visible="pin" length="middle"/>
+<pin name="PIN06" x="-22.86" y="7.62" visible="pin" length="middle"/>
+<pin name="PIN07" x="-22.86" y="5.08" visible="pin" length="middle"/>
+<pin name="PIN08" x="-22.86" y="2.54" visible="pin" length="middle"/>
+<pin name="PIN09" x="-22.86" y="0" visible="pin" length="middle"/>
+<pin name="PIN10" x="-22.86" y="-2.54" visible="pin" length="middle"/>
+<pin name="PIN11" x="-22.86" y="-5.08" visible="pin" length="middle"/>
+<pin name="PIN12" x="-22.86" y="-7.62" visible="pin" length="middle"/>
+</symbol>
+<symbol name="07PINOS">
+<pin name="PIN01" x="-22.86" y="20.32" visible="pin" length="middle"/>
+<pin name="PIN02" x="-22.86" y="17.78" visible="pin" length="middle"/>
+<pin name="PIN03" x="-22.86" y="15.24" visible="pin" length="middle"/>
+<pin name="PIN04" x="-22.86" y="12.7" visible="pin" length="middle"/>
+<pin name="PIN05" x="-22.86" y="10.16" visible="pin" length="middle"/>
+<pin name="PIN06" x="-22.86" y="7.62" visible="pin" length="middle"/>
+<pin name="PIN07" x="-22.86" y="5.08" visible="pin" length="middle"/>
+</symbol>
+<symbol name="06PINOS">
+<pin name="PIN01" x="-22.86" y="20.32" visible="pin" length="middle"/>
+<pin name="PIN02" x="-22.86" y="17.78" visible="pin" length="middle"/>
+<pin name="PIN03" x="-22.86" y="15.24" visible="pin" length="middle"/>
+<pin name="PIN04" x="-22.86" y="12.7" visible="pin" length="middle"/>
+<pin name="PIN05" x="-22.86" y="10.16" visible="pin" length="middle"/>
+<pin name="PIN06" x="-22.86" y="7.62" visible="pin" length="middle"/>
+</symbol>
+<symbol name="11PINOS">
+<pin name="PIN01" x="-22.86" y="20.32" visible="pin" length="middle"/>
+<pin name="PIN02" x="-22.86" y="17.78" visible="pin" length="middle"/>
+<pin name="PIN03" x="-22.86" y="15.24" visible="pin" length="middle"/>
+<pin name="PIN04" x="-22.86" y="12.7" visible="pin" length="middle"/>
+<pin name="PIN05" x="-22.86" y="10.16" visible="pin" length="middle"/>
+<pin name="PIN06" x="-22.86" y="7.62" visible="pin" length="middle"/>
+<pin name="PIN07" x="-22.86" y="5.08" visible="pin" length="middle"/>
+<pin name="PIN08" x="-22.86" y="2.54" visible="pin" length="middle"/>
+<pin name="PIN09" x="-22.86" y="0" visible="pin" length="middle"/>
+<pin name="PIN10" x="-22.86" y="-2.54" visible="pin" length="middle"/>
+<pin name="PIN11" x="-22.86" y="-5.08" visible="pin" length="middle"/>
+</symbol>
+<symbol name="09PINOS">
+<pin name="PIN01" x="-22.86" y="20.32" visible="pin" length="middle"/>
+<pin name="PIN02" x="-22.86" y="17.78" visible="pin" length="middle"/>
+<pin name="PIN03" x="-22.86" y="15.24" visible="pin" length="middle"/>
+<pin name="PIN04" x="-22.86" y="12.7" visible="pin" length="middle"/>
+<pin name="PIN05" x="-22.86" y="10.16" visible="pin" length="middle"/>
+<pin name="PIN06" x="-22.86" y="7.62" visible="pin" length="middle"/>
+<pin name="PIN07" x="-22.86" y="5.08" visible="pin" length="middle"/>
+<pin name="PIN08" x="-22.86" y="2.54" visible="pin" length="middle"/>
+<pin name="PIN09" x="-22.86" y="0" visible="pin" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="12PINOS">
+<description>Arduion Pro Mini Clone V1.0
+www.betemcu.cu</description>
+<gates>
+<gate name="G$1" symbol="12PINOS" x="38.1" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="12PINOS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="07PINOS">
+<description>07 pinos</description>
+<gates>
+<gate name="G$1" symbol="07PINOS" x="-22.154640625" y="11.39109375"/>
+</gates>
+<devices>
+<device name="" package="07PINOS">
+<connects>
+<connect gate="G$1" pin="PIN01" pad="PIN01"/>
+<connect gate="G$1" pin="PIN02" pad="PIN02"/>
+<connect gate="G$1" pin="PIN03" pad="PIN03"/>
+<connect gate="G$1" pin="PIN04" pad="PIN04"/>
+<connect gate="G$1" pin="PIN05" pad="PIN05"/>
+<connect gate="G$1" pin="PIN06" pad="PIN06"/>
+<connect gate="G$1" pin="PIN07" pad="PIN07"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="06PINOS">
+<gates>
+<gate name="G$1" symbol="06PINOS" x="-15.24" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="06PINOS">
+<connects>
+<connect gate="G$1" pin="PIN01" pad="PIN01"/>
+<connect gate="G$1" pin="PIN02" pad="PIN02"/>
+<connect gate="G$1" pin="PIN03" pad="PIN03"/>
+<connect gate="G$1" pin="PIN04" pad="PIN04"/>
+<connect gate="G$1" pin="PIN05" pad="PIN05"/>
+<connect gate="G$1" pin="PIN06" pad="PIN06"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="11PINOS">
+<gates>
+<gate name="G$1" symbol="11PINOS" x="-27.94" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="11PINOS">
+<connects>
+<connect gate="G$1" pin="PIN01" pad="PIN01"/>
+<connect gate="G$1" pin="PIN02" pad="PIN02"/>
+<connect gate="G$1" pin="PIN03" pad="PIN03"/>
+<connect gate="G$1" pin="PIN04" pad="PIN04"/>
+<connect gate="G$1" pin="PIN05" pad="PIN05"/>
+<connect gate="G$1" pin="PIN06" pad="PIN06"/>
+<connect gate="G$1" pin="PIN07" pad="PIN07"/>
+<connect gate="G$1" pin="PIN08" pad="PIN08"/>
+<connect gate="G$1" pin="PIN09" pad="PIN09"/>
+<connect gate="G$1" pin="PIN10" pad="PIN10"/>
+<connect gate="G$1" pin="PIN11" pad="PIN11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="09PINOS">
+<gates>
+<gate name="G$1" symbol="09PINOS" x="-48.26" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="09PINOS">
+<connects>
+<connect gate="G$1" pin="PIN01" pad="PIN01"/>
+<connect gate="G$1" pin="PIN02" pad="PIN02"/>
+<connect gate="G$1" pin="PIN03" pad="PIN03"/>
+<connect gate="G$1" pin="PIN04" pad="PIN04"/>
+<connect gate="G$1" pin="PIN05" pad="PIN05"/>
+<connect gate="G$1" pin="PIN06" pad="PIN06"/>
+<connect gate="G$1" pin="PIN07" pad="PIN07"/>
+<connect gate="G$1" pin="PIN08" pad="PIN08"/>
+<connect gate="G$1" pin="PIN09" pad="PIN09"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
